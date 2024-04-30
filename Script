@@ -1,0 +1,13 @@
+local bladeBall = Instance.new("Part")
+bladeBall.Size = Vector3.new (4,4,4,)
+bladeBall.BrickColor = BrickColor.new ("Bright red")
+bladeBall.Position = game.Player.LocalPlayer.Character.HumanoidRootPart.Position + Vector3.new (0,0,0)
+bladeBall.Anchored = false
+bladeBall.CanCollide = false
+bladeBall.Parent = game.Workspace
+
+while true do
+    bladeBall.CFrame = bladeBall.CFrame * CFrame.Angles(math.rad(1),math.rad(1,),math.rad(1)),
+  math.rad(1)) -- Rotate the blade ball
+       wait(0)
+end
